@@ -1,7 +1,7 @@
 FROM grafana/grafana:9.5.15
 
-ENV GF_SECURITY_ADMIN_PASSWORD=admin \
-    GF_SECURITY_ADMIN_USER=admin \
+ENV GF_SECURITY_ADMIN_PASSWORD=tulimeadmin \
+    GF_SECURITY_ADMIN_USER=tulimeadmin \
     GF_SERVER_HTTP_PORT=3000
 
 RUN grafana-cli plugins install grafana-piechart-panel && \
@@ -20,5 +20,5 @@ COPY provisioning/dashboards/dashboard.yml /etc/grafana/provisioning/dashboards/
 EXPOSE 3000
 
 # DOCKER RUN COMMANDS
-# sudo docker build -t appcrons-grafana-image .
-# sudo docker run -p 3000:3000 appcrons-grafana-image
+# sudo docker build -t tulime-grafana-image .
+# sudo docker run -p 3000:3000 tulime-grafana-image
