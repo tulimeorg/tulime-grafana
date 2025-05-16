@@ -4,7 +4,7 @@ datasources:
   - name: Prometheus
     type: prometheus
     access: proxy
-    url: https://appcrons-prometheus.onrender.com
+    url: https://tulime-prometheus.onrender.com
     basicAuth: false
     isDefault: true
     editable: true
