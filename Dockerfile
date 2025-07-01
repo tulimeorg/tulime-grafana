@@ -1,4 +1,4 @@
-FROM grafana/grafana:9.5.15
+FROM grafana/grafana:12.0.2
 
 ENV GF_SECURITY_ADMIN_PASSWORD=tulimeadmin \
     GF_SECURITY_ADMIN_USER=tulimeadmin \
